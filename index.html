@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neocarb AI — Elevate Patient Experience with AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-blue: #2364db;
+      --brand-dark-blue: #0c2264;
+      --brand-yellow: #facc15;
+      --bg-gradient: linear-gradient(90deg, #ecf3fe 0%, #f6fafd 100%);
+      --cta-gradient: linear-gradient(90deg, #2364db 10%, #23a6d5 100%);
+      --section-bg: #f7fafc;
+      --text-main: #1a202c;
+      --text-muted: #6b7280;
+    }
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg-gradient);
+      margin: 0;
+      color: var(--text-main);
+    }
+    .container {
+      max-width: 730px;
+      margin: 44px auto 36px auto;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 4px 32px rgba(44, 74, 143, 0.09);
+      padding: 40px 28px 32px 28px;
+      position: relative;
+    }
+    /* Hero */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 10px;
+    }
+    .hero-logo {
+      background: var(--brand-blue);
+      color: #fff;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      font-weight: 800;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 12px rgba(44, 100, 219, 0.13);
+    }
+    .hero-titles {
+      display: flex;
+      flex-direction: column;
+    }
+    .main-title {
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 2px;
+      color: var(--brand-dark-blue);
+      letter-spacing: -1px;
+    }
+    .main-title sup {
+      font-size: 0.45em;
+      margin-left: 2px;
+    }
+    .subtitle {
+      font-size: 1.15em;
+      color: var(--brand-blue);
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    /* Section titles */
+    .section-title {
+      font-size: 1.23em;
+      margin: 32px 0 16px 0;
+      font-weight: 700;
+      color: var(--brand-blue);
+      letter-spacing: 0.1px;
+    }
+    /* Offerings grid */
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: 38px 1fr 1fr;
+      row-gap: 14px;
+      align-items: start;
+    }
+    .offering-icon {
+      font-size: 1.3em;
+      color: #14b8a6;
+      margin-top: 1px;
+      justify-self: start;
+    }
+    .offering-label {
+      font-weight: 600;
+      color: var(--brand-dark-blue);
+      min-width: 170px;
+    }
+    .offering-desc {
+      color: var(--text-main);
+    }
+    /* Advantages & How it works */
+    .adv-list, .how-list {
+      padding: 0 0 0 2px;
+      margin: 0;
+      list-style: none;
+    }
+    .adv-list li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 1.07em;
+    }
+    .adv-list li .adv-ico {
+      font-size: 1.1em;
+      margin-right: 8px;
+      color: var(--brand-yellow);
+    }
+    .how-list li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+    }
+    .how-list li .how-ico {
+      color: var(--brand-blue);
+      margin-right: 8px;
+      font-size: 1.05em;
+      margin-top: 1px;
+    }
+    /* CTA */
+    .cta {
+      margin-top: 36px;
+      background: var(--cta-gradient);
+      color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(44,100,219,0.13);
+      padding: 28px 20px 23px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 1.13em;
+    }
+    .cta strong {
+      font-size: 1.12em;
+    }
+    .cta a {
+      color: #fff;
+      text-decoration: underline;
+      font-weight: 500;
+      word-break: break-all;
+    }
+    .cta .contact-row {
+      margin-top: 10px;
+      font-size: 1em;
+    }
+    /* Responsive */
+    @media (max-width: 640px) {
+      .container {
+        margin: 10px 0;
+        padding: 10px 3px 18px 3px;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .hero-logo { width: 42px; height: 42px; font-size: 1em; }
+      .main-title { font-size: 1.1em; }
+      .offerings-grid {
+        grid-template-columns: 30px 1fr;
+        grid-template-rows: auto;
+      }
+      .offering-label { min-width: unset; font-size: 1em;}
+      .cta { padding: 18px 8px 14px 12px; font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-logo">NAI</div>
+      <div class="hero-titles">
+        <div class="main-title">Neocarb AI<sup>&reg;</sup></div>
+        <div class="subtitle">Elevate Patient Experience with AI</div>
+      </div>
+    </div>
+
+    <!-- Offerings -->
+    <div class="section-title">Our Offerings</div>
+    <div class="offerings-grid">
+      <span class="offering-icon">✅</span>
+      <span class="offering-label">24/7 Patient Assistance:</span>
+      <span class="offering-desc">Instant responses to all FAQs (appointment, billing, services, etc.) even after hours</span>
+
+      <span class="offering-icon">✅</span>
+      <span class="offering-label">Appointment Management:</span>
+      <span class="offering-desc">Handle appointments for clinic visits, follow ups & referrals. Automated reminders to reduce no shows</span>
+
+      <span class="offering-icon">✅</span>
+      <span class="offering-label">Lab Results:</span>
+      <span class="offering-desc">Access lab reports, send notifications, breakdown medical terms into plain language</span>
+
+      <span class="offering-icon">✅</span>
+      <span class="offering-label">Integration & Security:</span>
+      <span class="offering-desc">Quick integration with existing systems. Fully PDPA compliant assistants for Singapore</span>
+    </div>
+
+    <!-- Advantages -->
+    <div class="section-title">Discover the Neocarb AI Advantage</div>
+    <ul class="adv-list">
+      <li><span class="adv-ico">⭐</span> Reduce front-desk workload by 40+% to focus on what matters most</li>
+      <li><span class="adv-ico">⭐</span> Quick onboarding with existing infrastructure and communications channels</li>
+      <li><span class="adv-ico">⭐</span> Personalized patient experience to improve satisfaction and loyalty</li>
+    </ul>
+
+    <!-- How it works -->
+    <div class="section-title">How It Works: Join our Early Access Pilot</div>
+    <p style="margin-bottom:12px;">
+      We’ll tailor Neocarb AI for your clinic’s unique needs, with <strong>complimentary onboarding and support</strong>:
+    </p>
+    <ul class="how-list">
+      <li><span class="how-ico">💬</span> Human-like AI assistants communicate with patients with warmth</li>
+      <li><span class="how-ico">👥</span> Front-desk staff in the loop, can monitor and take control anytime</li>
+      <li><span class="how-ico">🔄</span> Continuous improvement with real patient insights</li>
+    </ul>
+
+    <!-- CTA -->
+    <div class="cta">
+      <div><strong>Contact our experts today</strong> to schedule a demo &amp; discover how Neocarb AI can empower patient care.</div>
+      <div class="contact-row">
+        Email: <a href="mailto:external@neocarbtechnology.com">external@neocarbtechnology.com</a><br>
+        Phone: <a href="tel:+6582666019">+65 8266 6019</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
